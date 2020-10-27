@@ -1,7 +1,11 @@
 module.exports = ctx => ({ 
-    title: '网格公共组件', 
+    title: '网格公共组件',  // 设置网站标题
+    dest: 'docs/.vuepress/dist',    // 设置输出目录
+    base: '/', // 设置站点根路径
+    repo: 'https://github.com/Never99/vue-press-grid.git', // 添加 github 链接
+    keywords: '前端开发',
+    description: '前端开发 lhs的个人博客',
     head: [['link', { rel: 'icon', href: '/logo.ico' }]], 
-    description: 'Just playing around', 
     theme: '@vuepress/theme-default', 
     themeConfig: { 
         nav: [
