@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dialog(模态框组件) | 网格公共组件</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/vue-press-grid/logo.ico">
+    <meta name="description" content="前端开发 lhs的个人博客">
+    
+    <link rel="preload" href="/vue-press-grid/assets/css/0.styles.ccc93e22.css" as="style"><link rel="preload" href="/vue-press-grid/assets/js/app.ced59b00.js" as="script"><link rel="preload" href="/vue-press-grid/assets/js/2.b1aa8411.js" as="script"><link rel="preload" href="/vue-press-grid/assets/js/11.ff20c055.js" as="script"><link rel="prefetch" href="/vue-press-grid/assets/js/10.46e43940.js"><link rel="prefetch" href="/vue-press-grid/assets/js/12.adec604f.js"><link rel="prefetch" href="/vue-press-grid/assets/js/13.c54df519.js"><link rel="prefetch" href="/vue-press-grid/assets/js/14.43a4a675.js"><link rel="prefetch" href="/vue-press-grid/assets/js/15.706b8783.js"><link rel="prefetch" href="/vue-press-grid/assets/js/16.7b13045c.js"><link rel="prefetch" href="/vue-press-grid/assets/js/17.cd84bd66.js"><link rel="prefetch" href="/vue-press-grid/assets/js/18.26f532b5.js"><link rel="prefetch" href="/vue-press-grid/assets/js/19.01a73514.js"><link rel="prefetch" href="/vue-press-grid/assets/js/20.18231acd.js"><link rel="prefetch" href="/vue-press-grid/assets/js/21.159623fe.js"><link rel="prefetch" href="/vue-press-grid/assets/js/22.11ca97cf.js"><link rel="prefetch" href="/vue-press-grid/assets/js/23.57df14b1.js"><link rel="prefetch" href="/vue-press-grid/assets/js/24.189c29c1.js"><link rel="prefetch" href="/vue-press-grid/assets/js/25.7052d2ff.js"><link rel="prefetch" href="/vue-press-grid/assets/js/26.2f022016.js"><link rel="prefetch" href="/vue-press-grid/assets/js/27.a9c6b185.js"><link rel="prefetch" href="/vue-press-grid/assets/js/28.d0d6a883.js"><link rel="prefetch" href="/vue-press-grid/assets/js/29.1d1e3830.js"><link rel="prefetch" href="/vue-press-grid/assets/js/3.d578f5e6.js"><link rel="prefetch" href="/vue-press-grid/assets/js/30.e7bdcef3.js"><link rel="prefetch" href="/vue-press-grid/assets/js/31.6bb0cd5d.js"><link rel="prefetch" href="/vue-press-grid/assets/js/4.229a3a61.js"><link rel="prefetch" href="/vue-press-grid/assets/js/5.a27ddcbd.js"><link rel="prefetch" href="/vue-press-grid/assets/js/6.12c1d182.js"><link rel="prefetch" href="/vue-press-grid/assets/js/7.06af1b1d.js"><link rel="prefetch" href="/vue-press-grid/assets/js/8.bc7271fc.js"><link rel="prefetch" href="/vue-press-grid/assets/js/9.21eba4e4.js">
+    <link rel="stylesheet" href="/vue-press-grid/assets/css/0.styles.ccc93e22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-press-grid/" class="home-link router-link-active"><!----> <span class="site-name">网格公共组件</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-press-grid/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-press-grid/grid-cube/" class="nav-link router-link-active">
+  cube-ui组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识点" class="dropdown-title"><span class="title">知识点</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识点" class="mobile-dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/vue/" class="nav-link">
+  vue知识点
+</a></li><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/js/" class="nav-link">
+  js知识点
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-press-grid/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-press-grid/grid-cube/" class="nav-link router-link-active">
+  cube-ui组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识点" class="dropdown-title"><span class="title">知识点</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识点" class="mobile-dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/vue/" class="nav-link">
+  vue知识点
+</a></li><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/js/" class="nav-link">
+  js知识点
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue-press-grid/grid-cube/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>网格--常用组件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-press-grid/grid-cube/tabbar.html" class="sidebar-link">TabBar(菜单栏)</a></li><li><a href="/vue-press-grid/grid-cube/date-picker.html" class="sidebar-link">DatePicker(日期选择器)</a></li><li><a href="/vue-press-grid/grid-cube/picker.html" class="sidebar-link">Picker(选择器)</a></li><li><a href="/vue-press-grid/grid-cube/cascade-picker.html" class="sidebar-link">CascadePicker(级联选择器)</a></li><li><a href="/vue-press-grid/grid-cube/upload.html" class="sidebar-link">Upload(图片上传公共组件)</a></li><li><a href="/vue-press-grid/grid-cube/dialog.html" aria-current="page" class="active sidebar-link">Dialog(模态框组件)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue-press-grid/grid-cube/scroll.html" class="sidebar-link">cube-scroll(滚动加载)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>注意事项</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="dialog-模态框组件"><a href="#dialog-模态框组件" class="header-anchor">#</a> Dialog(模态框组件)</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Dialog模态框组件，提供了多种样式及交互形式。</p></div> <ul><li><h3 id="alert类型"><a href="#alert类型" class="header-anchor">#</a> alert类型</h3></li></ul> <img src="/vue-press-grid/cube-dialog-alert.png" alt="mixureSecure" style="max-height:400px;"> <div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cube-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showAlert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>alert类型<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cube-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token function">showAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createDialog</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span> <span class="token string">'alert'</span><span class="token punctuation">,</span>
+					title<span class="token operator">:</span> <span class="token string">'我是标题'</span><span class="token punctuation">,</span>
+					content<span class="token operator">:</span> <span class="token string">'我是内容'</span><span class="token punctuation">,</span>
+					icon<span class="token operator">:</span> <span class="token string">'cubeic-alert'</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>	
+</code></pre></div><ul><li><h3 id="提示输入框类型"><a href="#提示输入框类型" class="header-anchor">#</a> 提示输入框类型</h3></li></ul> <img src="/vue-press-grid/cube-dialog-prompt.png" alt="mixureSecure" style="max-height:400px;"> <div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cube-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showAlert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>提示输入框类型<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cube-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token function">showAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span>dialog <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createDialog</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span> <span class="token string">'prompt'</span><span class="token punctuation">,</span>
+					title<span class="token operator">:</span> <span class="token string">'我是标题'</span><span class="token punctuation">,</span>
+					prompt<span class="token operator">:</span> <span class="token punctuation">{</span>
+					value<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+					placeholder<span class="token operator">:</span> <span class="token string">'请输入'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span>
+					<span class="token function-variable function">onConfirm</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> promptValue</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						type<span class="token operator">:</span> <span class="token string">'warn'</span><span class="token punctuation">,</span>
+						time<span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+						txt<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Prompt value: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>promptValue <span class="token operator">||</span> <span class="token string">''</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+					<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>	
+</code></pre></div><ul><li><h3 id="确定、取消框"><a href="#确定、取消框" class="header-anchor">#</a> 确定、取消框</h3></li></ul> <img src="/vue-press-grid/cube-dialog-btn.png" alt="mixureSecure" style="max-height:400px;"> <div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cube-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showAlert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>确定、取消框<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cube-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token function">showAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createDialog</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span> <span class="token string">'confirm'</span><span class="token punctuation">,</span>
+					icon<span class="token operator">:</span> <span class="token string">'cubeic-alert'</span><span class="token punctuation">,</span>
+					title<span class="token operator">:</span> <span class="token string">'我是标题'</span><span class="token punctuation">,</span>
+					content<span class="token operator">:</span> <span class="token string">'我是内容'</span><span class="token punctuation">,</span>
+					confirmBtn<span class="token operator">:</span> <span class="token punctuation">{</span>
+					text<span class="token operator">:</span> <span class="token string">'确定按钮'</span><span class="token punctuation">,</span>
+					active<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+					disabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+					href<span class="token operator">:</span> <span class="token string">'javascript:;'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span>
+					cancelBtn<span class="token operator">:</span> <span class="token punctuation">{</span>
+					text<span class="token operator">:</span> <span class="token string">'取消按钮'</span><span class="token punctuation">,</span>
+					active<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+					disabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+					href<span class="token operator">:</span> <span class="token string">'javascript:;'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span>
+					<span class="token function-variable function">onConfirm</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						type<span class="token operator">:</span> <span class="token string">'warn'</span><span class="token punctuation">,</span>
+						time<span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+						txt<span class="token operator">:</span> <span class="token string">'点击确认按钮'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span>
+					<span class="token function-variable function">onCancel</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						type<span class="token operator">:</span> <span class="token string">'warn'</span><span class="token punctuation">,</span>
+						time<span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+						txt<span class="token operator">:</span> <span class="token string">'点击取消按钮'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>	
+</code></pre></div><ul><li><h3 id="带有关闭按钮类型"><a href="#带有关闭按钮类型" class="header-anchor">#</a> 带有关闭按钮类型</h3></li></ul> <img src="/vue-press-grid/cube-dialog-close.png" alt="mixureSecure" style="max-height:400px;"> <div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cube-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showAlert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>带有关闭按钮类型<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cube-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token function">showAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createDialog</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span> <span class="token string">'alert'</span><span class="token punctuation">,</span>
+					icon<span class="token operator">:</span> <span class="token string">'cubeic-alert'</span><span class="token punctuation">,</span>
+					showClose<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+					title<span class="token operator">:</span> <span class="token string">'标题'</span><span class="token punctuation">,</span>
+					<span class="token function-variable function">onClose</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						type<span class="token operator">:</span> <span class="token string">'warn'</span><span class="token punctuation">,</span>
+						time<span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+						txt<span class="token operator">:</span> <span class="token string">'点击关闭按钮'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>	
+</code></pre></div><ul><li><h3 id="插槽、可自定义类型"><a href="#插槽、可自定义类型" class="header-anchor">#</a> 插槽、可自定义类型</h3></li></ul> <img src="/vue-press-grid/cube-dialog-slot.png" alt="mixureSecure" style="max-height:400px;"> <div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cube-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showAlert<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>插槽、可自定义类型<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cube-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token function">showAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createDialog</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span> <span class="token string">'alert'</span><span class="token punctuation">,</span>
+					confirmBtn<span class="token operator">:</span> <span class="token punctuation">{</span>
+					text<span class="token operator">:</span> <span class="token string">'我知道了'</span><span class="token punctuation">,</span>
+					active<span class="token operator">:</span> <span class="token boolean">true</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">createElement</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token keyword">return</span> <span class="token punctuation">[</span>
+					<span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+						<span class="token string">'class'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+						<span class="token string">'my-title'</span><span class="token operator">:</span> <span class="token boolean">true</span>
+						<span class="token punctuation">}</span><span class="token punctuation">,</span>
+						slot<span class="token operator">:</span> <span class="token string">'title'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+						<span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+						<span class="token string">'class'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+							<span class="token string">'my-title-img'</span><span class="token operator">:</span> <span class="token boolean">true</span>
+						<span class="token punctuation">}</span>
+						<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+						<span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">,</span> <span class="token string">'附近车少,优选出租车将来接您'</span><span class="token punctuation">)</span>
+					<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+					<span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+						<span class="token string">'class'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+						<span class="token string">'my-content'</span><span class="token operator">:</span> <span class="token boolean">true</span>
+						<span class="token punctuation">}</span><span class="token punctuation">,</span>
+						slot<span class="token operator">:</span> <span class="token string">'content'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'价格仍按快车计算'</span><span class="token punctuation">)</span>
+					<span class="token punctuation">]</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>	
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-press-grid/grid-cube/upload.html" class="prev">
+        Upload(图片上传公共组件)
+      </a></span> <span class="next"><a href="/vue-press-grid/grid-cube/scroll.html">
+        cube-scroll(滚动加载)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-press-grid/assets/js/app.ced59b00.js" defer></script><script src="/vue-press-grid/assets/js/2.b1aa8411.js" defer></script><script src="/vue-press-grid/assets/js/11.ff20c055.js" defer></script>
+  </body>
+</html>
