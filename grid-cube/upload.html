@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Upload(图片上传公共组件) | 网格公共组件</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/vue-press-grid/logo.ico">
+    <meta name="description" content="前端开发 lhs的个人博客">
+    
+    <link rel="preload" href="/vue-press-grid/assets/css/0.styles.ccc93e22.css" as="style"><link rel="preload" href="/vue-press-grid/assets/js/app.ced59b00.js" as="script"><link rel="preload" href="/vue-press-grid/assets/js/2.b1aa8411.js" as="script"><link rel="preload" href="/vue-press-grid/assets/js/15.706b8783.js" as="script"><link rel="prefetch" href="/vue-press-grid/assets/js/10.46e43940.js"><link rel="prefetch" href="/vue-press-grid/assets/js/11.ff20c055.js"><link rel="prefetch" href="/vue-press-grid/assets/js/12.adec604f.js"><link rel="prefetch" href="/vue-press-grid/assets/js/13.c54df519.js"><link rel="prefetch" href="/vue-press-grid/assets/js/14.43a4a675.js"><link rel="prefetch" href="/vue-press-grid/assets/js/16.7b13045c.js"><link rel="prefetch" href="/vue-press-grid/assets/js/17.cd84bd66.js"><link rel="prefetch" href="/vue-press-grid/assets/js/18.26f532b5.js"><link rel="prefetch" href="/vue-press-grid/assets/js/19.01a73514.js"><link rel="prefetch" href="/vue-press-grid/assets/js/20.18231acd.js"><link rel="prefetch" href="/vue-press-grid/assets/js/21.159623fe.js"><link rel="prefetch" href="/vue-press-grid/assets/js/22.11ca97cf.js"><link rel="prefetch" href="/vue-press-grid/assets/js/23.57df14b1.js"><link rel="prefetch" href="/vue-press-grid/assets/js/24.189c29c1.js"><link rel="prefetch" href="/vue-press-grid/assets/js/25.7052d2ff.js"><link rel="prefetch" href="/vue-press-grid/assets/js/26.2f022016.js"><link rel="prefetch" href="/vue-press-grid/assets/js/27.a9c6b185.js"><link rel="prefetch" href="/vue-press-grid/assets/js/28.d0d6a883.js"><link rel="prefetch" href="/vue-press-grid/assets/js/29.1d1e3830.js"><link rel="prefetch" href="/vue-press-grid/assets/js/3.d578f5e6.js"><link rel="prefetch" href="/vue-press-grid/assets/js/30.e7bdcef3.js"><link rel="prefetch" href="/vue-press-grid/assets/js/31.6bb0cd5d.js"><link rel="prefetch" href="/vue-press-grid/assets/js/4.229a3a61.js"><link rel="prefetch" href="/vue-press-grid/assets/js/5.a27ddcbd.js"><link rel="prefetch" href="/vue-press-grid/assets/js/6.12c1d182.js"><link rel="prefetch" href="/vue-press-grid/assets/js/7.06af1b1d.js"><link rel="prefetch" href="/vue-press-grid/assets/js/8.bc7271fc.js"><link rel="prefetch" href="/vue-press-grid/assets/js/9.21eba4e4.js">
+    <link rel="stylesheet" href="/vue-press-grid/assets/css/0.styles.ccc93e22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-press-grid/" class="home-link router-link-active"><!----> <span class="site-name">网格公共组件</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-press-grid/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-press-grid/grid-cube/" class="nav-link router-link-active">
+  cube-ui组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识点" class="dropdown-title"><span class="title">知识点</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识点" class="mobile-dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/vue/" class="nav-link">
+  vue知识点
+</a></li><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/js/" class="nav-link">
+  js知识点
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-press-grid/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-press-grid/grid-cube/" class="nav-link router-link-active">
+  cube-ui组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识点" class="dropdown-title"><span class="title">知识点</span> <span class="arrow down"></span></button> <button type="button" aria-label="知识点" class="mobile-dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/vue/" class="nav-link">
+  vue知识点
+</a></li><li class="dropdown-item"><!----> <a href="/vue-press-grid/knows/js/" class="nav-link">
+  js知识点
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue-press-grid/grid-cube/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>网格--常用组件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-press-grid/grid-cube/tabbar.html" class="sidebar-link">TabBar(菜单栏)</a></li><li><a href="/vue-press-grid/grid-cube/date-picker.html" class="sidebar-link">DatePicker(日期选择器)</a></li><li><a href="/vue-press-grid/grid-cube/picker.html" class="sidebar-link">Picker(选择器)</a></li><li><a href="/vue-press-grid/grid-cube/cascade-picker.html" class="sidebar-link">CascadePicker(级联选择器)</a></li><li><a href="/vue-press-grid/grid-cube/upload.html" aria-current="page" class="active sidebar-link">Upload(图片上传公共组件)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue-press-grid/grid-cube/dialog.html" class="sidebar-link">Dialog(模态框组件)</a></li><li><a href="/vue-press-grid/grid-cube/scroll.html" class="sidebar-link">cube-scroll(滚动加载)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>注意事项</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="upload-图片上传公共组件"><a href="#upload-图片上传公共组件" class="header-anchor">#</a> Upload(图片上传公共组件)</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>网格项目-图片上传公共组件，直接引入该组件，按最后调用方式使用即可！（注意：上传图片的操作是在公共组件中进行的）</p></div> <div class="language-vue extra-class"><pre class="language-vue"><code>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>上传图片<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>!isDetail<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-upload</span>
+					<span class="token attr-name">:action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>this.$api.grid_upload_url.ploadImage<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">list-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>picture-card<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:file-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>files<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:before-upload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fileLimit<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:on-change</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleChange<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:on-success</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>success<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:on-preview</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handlePictureCardPreview<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:on-remove</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleRemove<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:on-exceed</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleExceed<span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:accept</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>uploadfile.accept!=undefined&amp;&amp;uploadfile.accept!=null ? uploadfile.accept.join(<span class="token punctuation">'</span>,<span class="token punctuation">'</span>): <span class="token punctuation">'</span>.jpg,.jpeg,.png,.gif<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span>
+					<span class="token attr-name">:limit</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>uploadfile.max!=undefined &amp;&amp;uploadfile.max!=null ? parseInt(uploadfile.max):9<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>el-icon-plus<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tip<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>el-upload__tip<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> red</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+						<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+							<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>uploadfile.ischeck<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{uploadfile.tip}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+						<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-upload</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dialog</span> <span class="token attr-name">:visible.sync</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>dialogVisible<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>100%<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>dialogImageUrl<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dialog</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+
+			<span class="token comment">&lt;!--  详情展示 start --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>上传图片<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>isDetail<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>demo-image<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+					<span class="token comment">&lt;!--      v-if=&quot;img.uploadType == 'upload-img'&quot;--&gt;</span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span> <span class="token property">width</span><span class="token punctuation">:</span> 360px<span class="token punctuation">;</span> <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+							<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(img, index) in files<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-image</span><span class="token style-attr language-css"><span class="token attr-name">
+									<span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">margin</span><span class="token punctuation">:</span>0 10px</span><span class="token punctuation">&quot;</span></span>
+									<span class="token attr-name">:preview-src-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>getSrcList(index)<span class="token punctuation">&quot;</span></span>
+									<span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showImg+<span class="token punctuation">'</span>?fileId=<span class="token punctuation">'</span>+img.fileId + <span class="token punctuation">'</span>&amp;fileName=<span class="token punctuation">'</span>+img.name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-image</span><span class="token punctuation">&gt;</span></span>
+							<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+					<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+		<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+				name<span class="token operator">:</span> <span class="token string">&quot;infoTemplateUploadImage&quot;</span><span class="token punctuation">,</span>
+			props<span class="token operator">:</span> <span class="token punctuation">{</span>
+				isDetail<span class="token operator">:</span> <span class="token punctuation">{</span>
+					type<span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+					<span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				uploadfile<span class="token operator">:</span> <span class="token punctuation">{</span>
+					type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+					<span class="token keyword">default</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				fileList<span class="token operator">:</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span>Array<span class="token punctuation">,</span>
+					<span class="token keyword">default</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				order<span class="token operator">:</span><span class="token punctuation">{</span>
+					type<span class="token operator">:</span>Number<span class="token punctuation">,</span>
+					<span class="token keyword">default</span><span class="token operator">:</span><span class="token number">1</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token punctuation">{</span>
+					dialogImageUrl<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+					dialogVisible<span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+					files<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+					showImg<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">.</span>grid_upload_url<span class="token punctuation">.</span>downloadFile<span class="token punctuation">,</span>
+					srcList<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token function">handleExceed</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">warning</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">最多可上传</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>uploadfile<span class="token punctuation">.</span>max<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">个图片！</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token function">fileLimit</span><span class="token punctuation">(</span><span class="token parameter">file</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">const</span> isLt2M <span class="token operator">=</span> file<span class="token punctuation">.</span>size <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">&gt;</span> <span class="token number">10</span>
+					<span class="token keyword">if</span> <span class="token punctuation">(</span>isLt2M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+						<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+							message<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">上传图片大小不能超过10M!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+							type<span class="token operator">:</span> <span class="token string">'warning'</span>
+						<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+						<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+							<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>uid <span class="token operator">==</span> file<span class="token punctuation">.</span>uid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+								<span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+								<span class="token keyword">break</span>
+							<span class="token punctuation">}</span>
+						<span class="token punctuation">}</span>
+						<span class="token keyword">return</span> <span class="token boolean">false</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token comment">/**
+					* 处理图片预览,只预览当前图片
+					* @param index
+					*/</span>
+				<span class="token function">getSrcList</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>srcList<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>srcList<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token function">handlePictureCardPreview</span><span class="token punctuation">(</span><span class="token parameter">file</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span>dialogImageUrl <span class="token operator">=</span> file<span class="token punctuation">.</span>url<span class="token punctuation">;</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span>dialogVisible <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+				<span class="token function">handleChange</span><span class="token punctuation">(</span><span class="token parameter">file<span class="token punctuation">,</span> fileList</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token comment">// this.files = fileList.slice(-3);</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token comment">/**
+					* 执行删除
+					*/</span>
+				<span class="token function">handleRemove</span><span class="token punctuation">(</span><span class="token parameter">file<span class="token punctuation">,</span> fileList</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">&quot;handleRemove&quot;</span><span class="token punctuation">,</span> file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token comment">/**
+					* 上传成功回调函数
+					* @param response
+					* @param file
+					* @param fileList
+					*/</span>
+				<span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">response<span class="token punctuation">,</span> file<span class="token punctuation">,</span> fileList</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					<span class="token keyword">let</span> tempFile <span class="token operator">=</span> <span class="token punctuation">{</span>
+						attachName<span class="token operator">:</span>file<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+						attachType<span class="token operator">:</span>file<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+						fileId<span class="token operator">:</span>response<span class="token punctuation">.</span>obj<span class="token punctuation">,</span>
+						uploadtype<span class="token operator">:</span><span class="token string">'uploadImage'</span><span class="token punctuation">,</span>
+						uploadorder<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>order<span class="token punctuation">,</span>
+						url<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">.</span>grid_upload_url<span class="token punctuation">.</span>downloadFile <span class="token operator">+</span> <span class="token string">'?fileId='</span> <span class="token operator">+</span> response<span class="token punctuation">.</span>obj <span class="token operator">+</span> <span class="token string">'&amp;fileName='</span> <span class="token operator">+</span> file<span class="token punctuation">.</span>name
+					<span class="token punctuation">}</span>
+					<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'uploadImage'</span><span class="token punctuation">,</span>tempFile<span class="token punctuation">)</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+				<span class="token comment">/**
+					* 文件下载
+					*/</span>
+				<span class="token comment">// downloadFile(val) {</span>
+				<span class="token comment">//   window.open(this.$api.grid_upload_url.downloadFile + &quot;?fileId=&quot; + val);</span>
+				<span class="token comment">// },</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileList <span class="token operator">!=</span> <span class="token keyword">undefined</span><span class="token operator">&amp;&amp;</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+					<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+						<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>uploadtype <span class="token operator">==</span> <span class="token string">'uploadImage'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+							<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+							obj<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>attachName<span class="token punctuation">;</span>
+							obj<span class="token punctuation">.</span>fileId <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>fileId<span class="token punctuation">;</span>
+							obj<span class="token punctuation">.</span>url <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">.</span>grid_upload_url<span class="token punctuation">.</span>downloadFile<span class="token operator">+</span><span class="token string">&quot;?fileId=&quot;</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>fileId<span class="token operator">+</span><span class="token string">&quot;&amp;fileName=&quot;</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>attachName
+							<span class="token keyword">this</span><span class="token punctuation">.</span>files<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>srcList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+						<span class="token punctuation">}</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span>
+	</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="上传图片公共组件的调用"><a href="#上传图片公共组件的调用" class="header-anchor">#</a> 上传图片公共组件的调用</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>info-template-upload-image</span>
+			<span class="token attr-name">:fileList</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>imageList<span class="token punctuation">&quot;</span></span>
+			<span class="token attr-name">:isDetail</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>isDetail<span class="token punctuation">&quot;</span></span>
+			<span class="token attr-name">:order</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>order<span class="token punctuation">&quot;</span></span>
+			<span class="token attr-name">:uploadfile</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>uploadfile<span class="token punctuation">&quot;</span></span>
+			<span class="token attr-name">@handleRemove</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onRemoveImage<span class="token punctuation">&quot;</span></span>
+			<span class="token attr-name">@uploadImage</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>uploadImage<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>info-template-upload-image</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">import</span> infoTemplateUploadImage <span class="token keyword">from</span> <span class="token string">'@/components/infoTemplate/infoTemplateUploadImage'</span><span class="token comment">// 引入上面公共组件</span>
+
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		name<span class="token operator">:</span> <span class="token string">&quot;infoTemplateUploadImage&quot;</span><span class="token punctuation">,</span>
+		props<span class="token operator">:</span> <span class="token punctuation">{</span>
+			formItem<span class="token operator">:</span> <span class="token punctuation">{</span>
+        type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+			isDetail<span class="token operator">:</span> <span class="token punctuation">{</span>
+				type<span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+				<span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			uploadfile<span class="token operator">:</span> <span class="token punctuation">{</span>
+				type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+				<span class="token keyword">default</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			order<span class="token operator">:</span><span class="token punctuation">{</span>
+				type<span class="token operator">:</span>Number<span class="token punctuation">,</span>
+				<span class="token keyword">default</span><span class="token operator">:</span><span class="token number">1</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			imageList<span class="token operator">:</span> <span class="token punctuation">{</span>
+				type<span class="token operator">:</span> Array<span class="token punctuation">,</span>
+				<span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+				<span class="token punctuation">[</span><span class="token punctuation">]</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span>
+				dialogImageUrl<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+				dialogVisible<span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+				files<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+				showImg<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">.</span>grid_upload_url<span class="token punctuation">.</span>downloadFile<span class="token punctuation">,</span>
+				srcList<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token comment">/**
+			 * 接收上传图片组件传过来的值，上传图片是在公共组件中进行的
+			 */</span>
+			<span class="token function">uploadImage</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span>imageList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span>formItem<span class="token punctuation">.</span>templateList<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">.</span>showType <span class="token operator">==</span> <span class="token string">'upload-image'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+						item<span class="token punctuation">.</span>fileList <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imageList
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token comment">/**
+			 * 移除上传图片
+			 */</span>
+			<span class="token function">onRemoveImage</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imageList<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>fileId <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imageList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>fileId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+						<span class="token keyword">this</span><span class="token punctuation">.</span>imageList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>imageList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+						<span class="token keyword">this</span><span class="token punctuation">.</span>formItem<span class="token punctuation">.</span>templateList<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+							<span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">.</span>showType <span class="token operator">==</span> <span class="token string">'upload-image'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+							item<span class="token punctuation">.</span>fileList <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imageList
+						<span class="token punctuation">}</span>
+					<span class="token punctuation">}</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>注意：若此文档看着不清晰，可去公司Gitlab官网查看详细代码！<br>
+工程名：https://gitlab.asiainfo.com/coms-chnl-grid/coms-chnl-grid-web<br>
+分支：develop-tj<br> <a href="https://gitlab.asiainfo.com/coms-chnl-grid/coms-chnl-grid-web" title="官网" target="_blank" rel="noopener noreferrer">去看看<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-press-grid/grid-cube/cascade-picker.html" class="prev">
+        CascadePicker(级联选择器)
+      </a></span> <span class="next"><a href="/vue-press-grid/grid-cube/dialog.html">
+        Dialog(模态框组件)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-press-grid/assets/js/app.ced59b00.js" defer></script><script src="/vue-press-grid/assets/js/2.b1aa8411.js" defer></script><script src="/vue-press-grid/assets/js/15.706b8783.js" defer></script>
+  </body>
+</html>
