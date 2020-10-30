@@ -14,7 +14,7 @@
 :::
 
 
-```vue
+```vue{47}
   <template>
     // cube-scroll 标签外的盒子必须有固定高度，否则不会生效
 

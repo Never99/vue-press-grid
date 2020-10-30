@@ -34,6 +34,17 @@ module.exports = ctx => ({
                     ]
                 },
                 {
+                    title: '项目---常用Vue方法',
+                    children: [
+                        '/grid-cube/vue/axios',
+                        '/grid-cube/vue/phone-type',
+                        '/grid-cube/vue/date-time',
+                        '/grid-cube/vue/common',
+                        '/grid-cube/vue/directive',
+                        '/grid-cube/vue/vuex',
+                    ]
+                },
+                {
                     title: '注意事项',
                     children: [
                         '/grid-cube/warning',

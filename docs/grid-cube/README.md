@@ -87,3 +87,7 @@ import {
 } from 'cube-ui'
 ```
 
+:::warning
+以下收集的内容来自与网格、渠道项目，采集内容可能不太全面，希望大家能够积极补充。如有问题，请联系[yangyd5@asiainfo.com]()
+:::
+

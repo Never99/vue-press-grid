@@ -82,6 +82,6 @@
     注意：  想使用此插件去自定义标签或者icon，
     <cube-tab-bar><cube-tab></cube-tab></cube-tab-bar>（需要这么嵌套），
     <cube-tab></cube-tab> 标签里的内容也可以使用自定义标签，添加自定义icon。
-    使用此标签，click事件、change事件都是绑定在此标签上的
+    使用此标签，click事件、change事件都是绑定在<cube-tab-bar>标签上的
 :::
 
